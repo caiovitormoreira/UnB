@@ -5,6 +5,14 @@ $cidade   					= $_POST['cidade'];
 $pais			   			= $_POST['pais'];
 $apikey			   			= $_POST['apikey'];
 
+//checando se a variavel é numerica
+if ((is_numeric($cidade)) OR (is_numeric($pais))) {
+	$retorno_get.= "erro2=1&";
+	header('Location: ./index.php?'.$retorno_get);
+	die();
+}
+
+######## PROCEDIMENTO DE INSERT DOS DADOS DO WEATHER #########
 $url = "api.openweathermap.org/data/2.5/weather?q=".$cidade.",".$pais."&APPID=".$apikey;
 
 $curl = curl_init();
@@ -25,7 +33,6 @@ curl_setopt_array($curl, array(
 			
 			$data = json_decode($resposta);
 			
-			
 			$temp 		= $data->main->temp;
 			$temp_max 	= $data->main->temp_max;
 			$temp_min 	= $data->main->temp_min;
@@ -34,8 +41,10 @@ curl_setopt_array($curl, array(
 			$country	= $data->sys->country;
 			$code		= $data->cod;
 			
-			//echo $description= $data->weather
-			
+			$description = $data->weather;
+			$description = $description['0'];
+			$description = $description->description;
+			//var_export($description);
 
 			//conversion of kelvin values to celcius
 			$temp 		= ($temp - 273.15);
@@ -46,11 +55,17 @@ curl_setopt_array($curl, array(
 
     $pdo = new PDO("mysql:host=localhost;dbname=api_forecast","root","");
 
-    echo $sql = "INSERT INTO `current`(`temperature`, `temp_min`, `temp_max`, `humidity`, `name`, `country`) 
-    		VALUES ('$temp', '$temp_min', '$temp_max', '$humidity', '$name', '$country')";
+    echo $sql = "INSERT INTO `current`(`temperature`, `temp_min`, `description`, `temp_max`, `humidity`, `name`, `country`) 
+    		VALUES ('$temp', '$temp_min', '$description', '$temp_max', '$humidity', '$name', '$country')";
 
 	$stmt = $pdo->prepare($sql);
 	$stmt->execute();
+
+######## FIM DO PROCEDIMENTO DE INSERT DOS DADOS DO WEATHER #########
+
+######## INICIO DO INSERT DE DADOS DO FORECAST #########	
+
+######## FIM DO INSERT DE DADOS DO FORECAST #########	
 	
 	
 	if($code == 200){		

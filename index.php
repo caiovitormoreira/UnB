@@ -91,13 +91,17 @@
 
 						$sucesso_registro   = isset($_GET['sucesso_registro'])  ? $_GET['sucesso_registro'] : 0;
 						$erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
+						$erro2 = isset($_GET['erro2']) ? $_GET['erro2'] : 0;
 
 						if($sucesso_registro){
 							echo '<font style="color:#48CBF3">Cidade encontrada!</font>';
 						}
                      		//tratamento no caso de erro
 						if($erro ==1){
-							echo '<font style="color:#FF0000">Cidade não encontrada ou chave inválida.</font>';
+							echo '<font style="color:#FF0000">Cidade não encontrada ou chave inválida!</font>';
+						}
+						if($erro2 ==1){
+							echo '<font style="color:#FF0000">Caracter inválido!</font>';
 						}
 						?>
 
@@ -166,21 +170,26 @@
 						<div class="card panel white col s4">
 							<div class="input-field col s7">
 								
-									<b>Cidade:</b>
+								<b>Cidade:</b>
 								
-									<br></br>
-									<b>País:</b>
-									
-									<br></br>
-									<b>Temperatura atual:</b>
-									
-									<br></br>
-									<b>Temperatura mínima:</b>
-									
-									<br></br>
-									<b>Temperatura máxima:</b>
-									
-									<br></br>
+								<br></br>
+								<b>País:</b>
+
+								<br></br>
+								<b>Temperatura atual:</b>
+
+								<br></br>
+								<b>Temperatura mínima:</b>
+
+								<br></br>
+								<b>Temperatura máxima:</b>
+
+								<br></br>
+								<b>Umidade relativa:</b>
+								<br></br>
+								<b>Descrição:</b>
+
+								<br></br>
 								
 							</div>
 							<div align="right" class="input-field col s5">
@@ -202,14 +211,53 @@
 									<a>$data->temp_min °C</a>
 									<br></br>
 									<a>$data->temp_max °C</a>
+									<br></br>
+									<a>$data->humidity%</a>
+									<br></br>
+									<a>$data->description</a>
 									<br></br>";
 								}
 								else{}
 									?>
-
-								
 							</div>
 						</div>
+						<div class="card panel white col s8">
+							<div align="left" class="input-field col s2">
+								<b>Date:</b>
+								<b>Temperature:</b>
+								<b>Temp_min:</b>
+								<b>Temp_max:</b>
+							</div>
+							<div align="center" class="input-field col s2">
+								Date:
+								Temperature:
+								Temp_min:
+								Temp_max:
+							</div>
+							<div align="center" class="input-field col s2">
+								Date:
+								Temperature:
+								Temp_min:
+								Temp_max:
+							</div>
+							<div align="center" class="input-field col s2">
+								Date:
+								Temperature:
+								Temp_min:
+								Temp_max:
+							</div>
+							<div align="center" class="input-field col s2">
+								Date:
+								Temperature:
+								Temp_min:
+								Temp_max:
+							</div>
+							<div align="center" class="input-field col s2">
+								Date:
+								Temperature:
+								Temp_min:
+								Temp_max:
+							</div>
 					</div>
 				</div>
 
