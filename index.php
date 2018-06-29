@@ -55,7 +55,7 @@
 					<li class="bold"><a href="index.php" class="waves-effect waves-cyan"><i class="mdi-image-wb-sunny"></i> Forecast API simulation</a>
 					</li>
 
-					<li class="bold"><a href="lista_cidade.php" class="waves-effect waves-cyan"><i class="mdi-action-search"></i>Lista de cidades</a>
+					<li class="bold"><a href="https://openweathermap.org/current" class="waves-effect waves-cyan"><i class="mdi-action-assignment"></i>API - Documentação</a>
 					</li>
 
 				</ul>
@@ -176,13 +176,13 @@
 								<b>País:</b>
 
 								<br></br>
-								<b>Temperatura atual:</b>
+								<b>Temp atual:</b>
 
 								<br></br>
-								<b>Temperatura mínima:</b>
+								<b>Temp mínima:</b>
 
 								<br></br>
-								<b>Temperatura máxima:</b>
+								<b>Temp máxima:</b>
 
 								<br></br>
 								<b>Umidade relativa:</b>
@@ -223,40 +223,69 @@
 						</div>
 						<div class="card panel white col s8">
 							<div align="left" class="input-field col s2">
-								<b>Date:</b>
-								<b>Temperature:</b>
-								<b>Temp_min:</b>
-								<b>Temp_max:</b>
-							</div>
-							<div align="center" class="input-field col s2">
-								Date:
-								Temperature:
-								Temp_min:
-								Temp_max:
-							</div>
-							<div align="center" class="input-field col s2">
-								Date:
-								Temperature:
-								Temp_min:
-								Temp_max:
-							</div>
-							<div align="center" class="input-field col s2">
-								Date:
-								Temperature:
-								Temp_min:
-								Temp_max:
-							</div>
-							<div align="center" class="input-field col s2">
-								Date:
-								Temperature:
-								Temp_min:
-								Temp_max:
-							</div>
-							<div align="center" class="input-field col s2">
-								Date:
-								Temperature:
-								Temp_min:
-								Temp_max:
+
+								<?php
+											$sql2 = "SELECT * FROM forecast WHERE temp_1 != 0 ORDER BY id_forecast DESC LIMIT 1";
+											$stmt2 = $pdo->prepare($sql2);
+											$stmt2->execute();
+
+											if($stmt2->rowCount()>0){
+												$data2 = $stmt2->fetch(PDO::FETCH_OBJ);
+												echo "
+													<b>Date:</b>
+													<br></br>
+													<b>Temperature:</b>
+													<br></br>
+													<b>Temp_min:</b>
+													<br></br>
+													<b>Temp_max:</b>
+												</div>
+												<div align='center' class='input-field col s2'>
+													$data2->date_1
+													<br></br>
+													$data2->temp_1
+													<br></br>
+													$data2->min_1
+													<br></br>
+													$data2->max_1
+												</div>
+												<div align='center' class='input-field col s2'>
+													$data2->date_2
+													<br></br>
+													$data2->temp_2
+													<br></br>
+													$data2->min_2
+													<br></br>
+													$data2->max_2
+												</div>
+												<div align='center' class='input-field col s2'>
+													$data2->date_3
+													<br></br>
+													$data2->temp_3
+													<br></br>
+													$data2->min_3
+													<br></br>
+													$data2->max_3
+												</div>
+												<div align='center' class='input-field col s2'>
+													$data2->date_4
+													<br></br>
+													$data2->temp_4
+													<br></br>
+													$data2->min_4
+													<br></br>
+													$data2->max_4
+												</div>
+												<div align='center' class='input-field col s2'>
+													$data2->date_5
+													<br></br>
+													$data2->temp_5
+													<br></br>
+													$data2->min_5
+													<br></br>
+													$data2->max_5";
+											}
+								?>
 							</div>
 					</div>
 				</div>
