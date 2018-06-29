@@ -126,29 +126,13 @@
 											</datalist>
 										</div>
 
-										<div class="input-field col s2">
-											<input  name="pais" type="text" list="country_names" placeholder="País (ex: BR)" class="validate">
-											<datalist id="country_names">
-												<?php
-
-												$sql2= "SELECT `country` FROM `current` WHERE humidity != '0' GROUP BY country";
-												
-												$stmt2 = $pdo->prepare($sql2);
-												$stmt2->execute();
-
-												if($stmt2->rowCount()>0){
-													while ($country = $stmt2->fetch(PDO::FETCH_OBJ)){
-														echo "<option> $country->country</option>";
-													}
-												}
-												?>
-											</datalist>
-										</div>
+										
 										<div class="input-field col s4">
 											<select name="apikey">
 												<option value="c3564bb2efb1702ef9eb41ed2af91453">Key 1</option>
 												<option value="af1f6358ef485bd265bc1fb3c1834f81">Key 2</option>
 												<option value="36540b5e93071883588b0a2597213879">Key 3</option>
+												
 											</select>
 										</div>
 									</div>
@@ -164,56 +148,41 @@
 							
 						</div>
 						<div class="card panel white col s4">
-							<div class="input-field col s7">
-								
-									<b>Cidade:</b>
-								
-									<br></br>
-									<b>País:</b>
-									
-									<br></br>
-									<b>Temperatura atual:</b>
-									
-									<br></br>
-									<b>Temperatura mínima:</b>
-									
-									<br></br>
-									<b>Temperatura máxima:</b>
-									
-									<br></br>
-								
-							</div>
-							<div align="right" class="input-field col s5">
+							<div class="input-field col s12">
 								<?php
 
 								$sql = "SELECT * FROM current WHERE humidity != 0 ORDER BY id_weather DESC LIMIT 1";
+								$stmt->closeCursor();
 								$stmt = $pdo->prepare($sql);
 								$stmt->execute();
 
 								if($stmt->rowCount()>0){
 									$data = $stmt->fetch(PDO::FETCH_OBJ);
 									echo "
-									<a>$data->name</a>
+									<b>Cidade:</b>
+									<a>'$data->name'</a>
 									<br></br>
-									<a>$data->country</a>
+									<b>País</b>
+									<a>'$data->country'</a>
 									<br></br>
-									<a>$data->temperature °C</a>
+									<b>Temperatura atual:</b>
+									<a>'$data->temperature'</a>
 									<br></br>
-									<a>$data->temp_min °C</a>
+									<b>Temperatura mínima</b>
+									<a>'$data->temp_min'</a>
 									<br></br>
-									<a>$data->temp_max °C</a>
+									<b>Temperatura máxima</b>
+									<a>'$data->temp_max'</a>
 									<br></br>";
 								}
-								else{}
-									?>
-
-								
+								else{
+									
+								}
+								?>
 							</div>
 						</div>
 					</div>
 				</div>
-
-
 
     <!-- ================================================
     Scripts

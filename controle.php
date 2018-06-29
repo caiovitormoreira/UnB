@@ -25,14 +25,17 @@ curl_setopt_array($curl, array(
 			
 			$data = json_decode($resposta);
 			
-			$obj_main 	= $data->main;
-			//$obj_weather= $data->weather;
-			$temp 		= $obj_main->temp;
-			$temp_max 	= $obj_main->temp_max;
-			$temp_min 	= $obj_main->temp_min;
-			$humidity 	= $obj_main->humidity;
-			//$description= $obj_weather->description;
+			
+			$temp 		= $data->main->temp;
+			$temp_max 	= $data->main->temp_max;
+			$temp_min 	= $data->main->temp_min;
+			$humidity 	= $data->main->humidity;
 			$name 		= $data->name;
+			$country	= $data->sys->country;
+			$code		= $data->cod;
+			
+			//echo $description= $data->weather
+			
 
 			//conversion of kelvin values to celcius
 			$temp 		= ($temp - 273.15);
@@ -43,19 +46,22 @@ curl_setopt_array($curl, array(
 
     $pdo = new PDO("mysql:host=localhost;dbname=api_forecast","root","");
 
-    echo $sql = "INSERT INTO `current`(`temperature`, `temp_min`, `temp_max`, `humidity`, `name`) 
-    		VALUES ('$temp', '$temp_min', '$temp_max', '$humidity', '$name')";
+    echo $sql = "INSERT INTO `current`(`temperature`, `temp_min`, `temp_max`, `humidity`, `name`, `country`) 
+    		VALUES ('$temp', '$temp_min', '$temp_max', '$humidity', '$name', '$country')";
 
 	$stmt = $pdo->prepare($sql);
 	$stmt->execute();
 	
-	if($stmt->rowCount()>0){		
-		$resultado = $stmt->fetch(PDO::FETCH_OBJ);
-		var_export($resultado);
-	}
-  
-
 	
-	// header('Location: ./index.php?');
-	// die();
+	if($code == 200){		
+		$retorno_get.= "sucesso_registro=1&";
+		header('Location: ./index.php?'.$retorno_get);
+		die();
+	}
+	else{
+		$retorno_get.= "erro=1&";
+		header('Location: ./index.php?'.$retorno_get);
+		die();
+	}
+
 ?>
