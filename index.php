@@ -111,7 +111,7 @@
 								<div class="container">
 									<div class="row" >
 										<div class="input-field col s6">
-											<input placeholder="Cidade" list="city_names" name="cidade" type="text" class="validate">
+											<input required placeholder="Cidade" list="city_names" name="cidade" type="text" class="validate">
 											<datalist id="city_names">
 												<?php
 
@@ -131,7 +131,7 @@
 										</div>
 
 										<div class="input-field col s2">
-											<input  name="pais" type="text" list="country_names" placeholder="País (ex: BR)" class="validate">
+											<input required name="pais" type="text" list="country_names" placeholder="País (ex: BR)" class="validate">
 											<datalist id="country_names">
 												<?php
 
@@ -225,70 +225,72 @@
 							<div align="left" class="input-field col s2">
 
 								<?php
-											$sql2 = "SELECT * FROM forecast WHERE temp_1 != 0 ORDER BY id_forecast DESC LIMIT 1";
-											$stmt2 = $pdo->prepare($sql2);
-											$stmt2->execute();
+								$sql2 = "SELECT * FROM forecast WHERE temp_1 != 0 ORDER BY id_forecast DESC LIMIT 1";
+								$stmt2 = $pdo->prepare($sql2);
+								$stmt2->execute();
 
-											if($stmt2->rowCount()>0){
-												$data2 = $stmt2->fetch(PDO::FETCH_OBJ);
-												echo "
-													<b>Date:</b>
-													<br></br>
-													<b>Temperature:</b>
-													<br></br>
-													<b>Temp_min:</b>
-													<br></br>
-													<b>Temp_max:</b>
-												</div>
-												<div align='center' class='input-field col s2'>
-													$data2->date_1
-													<br></br>
-													$data2->temp_1
-													<br></br>
-													$data2->min_1
-													<br></br>
-													$data2->max_1
-												</div>
-												<div align='center' class='input-field col s2'>
-													$data2->date_2
-													<br></br>
-													$data2->temp_2
-													<br></br>
-													$data2->min_2
-													<br></br>
-													$data2->max_2
-												</div>
-												<div align='center' class='input-field col s2'>
-													$data2->date_3
-													<br></br>
-													$data2->temp_3
-													<br></br>
-													$data2->min_3
-													<br></br>
-													$data2->max_3
-												</div>
-												<div align='center' class='input-field col s2'>
-													$data2->date_4
-													<br></br>
-													$data2->temp_4
-													<br></br>
-													$data2->min_4
-													<br></br>
-													$data2->max_4
-												</div>
-												<div align='center' class='input-field col s2'>
-													$data2->date_5
-													<br></br>
-													$data2->temp_5
-													<br></br>
-													$data2->min_5
-													<br></br>
-													$data2->max_5";
-											}
+								if($stmt2->rowCount()>0){
+									$data2 = $stmt2->fetch(PDO::FETCH_OBJ);
+									echo "
+									<b>Date:</b>
+									<br></br>
+									<b>Temperature:</b>
+									<br></br>
+									<b>Temp_min:</b>
+									<br></br>
+									<b>Temp_max:</b>
+									</div>
+									<div align='center' class='input-field col s2'>
+									$data2->date_1
+									<br></br>
+									$data2->temp_1
+									<br></br>
+									$data2->min_1
+									<br></br>
+									$data2->max_1
+									</div>
+									<div align='center' class='input-field col s2'>
+									$data2->date_2
+									<br></br>
+									$data2->temp_2
+									<br></br>
+									$data2->min_2
+									<br></br>
+									$data2->max_2
+									</div>
+									<div align='center' class='input-field col s2'>
+									$data2->date_3
+									<br></br>
+									$data2->temp_3
+									<br></br>
+									$data2->min_3
+									<br></br>
+									$data2->max_3
+									</div>
+									<div align='center' class='input-field col s2'>
+									$data2->date_4
+									<br></br>
+									$data2->temp_4
+									<br></br>
+									$data2->min_4
+									<br></br>
+									$data2->max_4
+									</div>
+									<div align='center' class='input-field col s2'>
+									$data2->date_5
+									<br></br>
+									$data2->temp_5
+									<br></br>
+									$data2->min_5
+									<br></br>
+									$data2->max_5";
+								}
 								?>
 							</div>
+						</div>
 					</div>
 				</div>
+			</div>
 
 
 
