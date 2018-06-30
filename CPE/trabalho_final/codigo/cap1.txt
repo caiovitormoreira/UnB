@@ -1,0 +1,20 @@
+﻿No.     Time           Source                Destination           Protocol Length Info
+      2 0.121527       104.244.42.1          172.31.197.241        TCP      60     443 → 54883 [ACK] Seq=1 Ack=198 Win=683 Len=0
+
+
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.295160       104.244.42.2          172.31.197.245 	   SSL 728     Application Data
+
+
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.121527       104.244.42.3         172.31.197.245        UDP 60     443 → 54883 [ACK] Seq=1 Ack=198 Win=683 Len=0
+
+
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.121527       104.244.42.4          172.31.197.245        UDP 60     443 → 54883 [ACK] Seq=1 Ack=198 Win=683 Len=0
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.121527       104.244.42.5          172.31.197.245        CU 60     443 → 54883 [ACK] Seq=1 Ack=198 Win=683 Len=0

@@ -1,0 +1,12 @@
+
+Disparando cruzeiro.com.br [201.7.177.137] com 32 bytes de dados:
+Resposta de 201.7.177.137: bytes=32 tempo=375ms TTL=240
+Resposta de 201.7.177.137: bytes=32 tempo=545ms TTL=240
+Resposta de 201.7.177.137: bytes=32 tempo=344ms TTL=240
+Resposta de 201.7.177.137: bytes=32 tempo=324ms TTL=240
+
+Estat¡sticas do Ping para 201.7.177.137:
+    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de
+             perda),
+Aproximar um n£mero redondo de vezes em milissegundos:
+    M¡nimo = 324ms, M ximo = 545ms, M‚dia = 397ms

@@ -1,0 +1,7 @@
+NOTAS DA PROFESSORA
+
+1. quanto aos itens 1 e 2, seria interessante fazer o estudo por fluxo, ou seja (ip origem _ porta origem, ip desinto + porta destino) desta maneira voce estaria fazendo o estudo por aplicação. Se for uma porta conhecida, voce poderia dizer ate qual é a aplicação.
+
+2. para o item 3 é um calculo um pouco injusto pois em determinados momentos a rede poderias estar vazia e este tempo seria contabilizado no teu estudo.
+
+3. o que é frequencia para voce? numero de vezes que foi transmitido na rede?

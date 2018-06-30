@@ -1,0 +1,207 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       52.26.127.3           192.168.25.233        TLSv1.2  187    Application Data
+
+Frame 1: 187 bytes on wire (1496 bits), 187 bytes captured (1496 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 4, Src: 52.26.127.3, Dst: 192.168.25.233
+Transmission Control Protocol, Src Port: 443, Dst Port: 50831, Seq: 1, Ack: 1, Len: 133
+Secure Sockets Layer
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.199183       192.168.25.233        52.26.127.3           TCP      54     50831 → 443 [ACK] Seq=1 Ack=134 Win=16367 Len=0
+
+Frame 2: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: HewlettP_49:af:30 (9c:8e:99:49:af:30), Dst: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e)
+Internet Protocol Version 4, Src: 192.168.25.233, Dst: 52.26.127.3
+Transmission Control Protocol, Src Port: 50831, Dst Port: 443, Seq: 1, Ack: 134, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.966680       52.26.127.3           192.168.25.233        TLSv1.2  187    Application Data
+
+Frame 3: 187 bytes on wire (1496 bits), 187 bytes captured (1496 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 4, Src: 52.26.127.3, Dst: 192.168.25.233
+Transmission Control Protocol, Src Port: 443, Dst Port: 50831, Seq: 134, Ack: 1, Len: 133
+Secure Sockets Layer
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 1.170219       192.168.25.233        52.26.127.3           TCP      54     50831 → 443 [ACK] Seq=1 Ack=267 Win=16334 Len=0
+
+Frame 4: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: HewlettP_49:af:30 (9c:8e:99:49:af:30), Dst: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e)
+Internet Protocol Version 4, Src: 192.168.25.233, Dst: 52.26.127.3
+Transmission Control Protocol, Src Port: 50831, Dst Port: 443, Seq: 1, Ack: 267, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 4.263551       162.125.18.133        192.168.25.233        TLSv1.2  311    Application Data
+
+Frame 5: 311 bytes on wire (2488 bits), 311 bytes captured (2488 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 4, Src: 162.125.18.133, Dst: 192.168.25.233
+Transmission Control Protocol, Src Port: 443, Dst Port: 49782, Seq: 1, Ack: 1, Len: 257
+Secure Sockets Layer
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 4.267359       192.168.25.233        162.125.18.133        TLSv1.2  754    Application Data
+
+Frame 6: 754 bytes on wire (6032 bits), 754 bytes captured (6032 bits) on interface 0
+Ethernet II, Src: HewlettP_49:af:30 (9c:8e:99:49:af:30), Dst: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e)
+Internet Protocol Version 4, Src: 192.168.25.233, Dst: 162.125.18.133
+Transmission Control Protocol, Src Port: 49782, Dst Port: 443, Seq: 1, Ack: 258, Len: 700
+Secure Sockets Layer
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 4.375926       192.168.25.217        224.0.0.251           MDNS     211    Standard query 0x0000 PTR _sleep-proxy._udp.local, "QM" question PTR _00000000-5cc2-387c-11d2-4ced676141d0._sub._home-sharing._tcp.local, "QM" question PTR _spotify-connect._tcp.local, "QM" question PTR 70-35-60-63.1 Apple TV._sleep-proxy._udp.local
+
+Frame 7: 211 bytes on wire (1688 bits), 211 bytes captured (1688 bits) on interface 0
+Ethernet II, Src: Apple_a2:f1:54 (f0:c1:f1:a2:f1:54), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 192.168.25.217, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 4.377605       fe80::1883:c4ca:6cd7:1c6f ff02::fb              MDNS     231    Standard query 0x0000 PTR _sleep-proxy._udp.local, "QM" question PTR _00000000-5cc2-387c-11d2-4ced676141d0._sub._home-sharing._tcp.local, "QM" question PTR _spotify-connect._tcp.local, "QM" question PTR 70-35-60-63.1 Apple TV._sleep-proxy._udp.local
+
+Frame 8: 231 bytes on wire (1848 bits), 231 bytes captured (1848 bits) on interface 0
+Ethernet II, Src: Apple_a2:f1:54 (f0:c1:f1:a2:f1:54), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::1883:c4ca:6cd7:1c6f, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 4.440925       162.125.18.133        192.168.25.233        TCP      60     443 → 49782 [ACK] Seq=258 Ack=701 Win=297 Len=0
+
+Frame 9: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 4, Src: 162.125.18.133, Dst: 192.168.25.233
+Transmission Control Protocol, Src Port: 443, Dst Port: 49782, Seq: 258, Ack: 701, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 5.776777       2804:7f3:8880:d51f:7583:5e92:7a66:a6dc 2800:3f0:4004:800::2002 TCP      75     50960 → 80 [ACK] Seq=1 Ack=1 Win=16660 Len=1
+
+Frame 10: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface 0
+Ethernet II, Src: HewlettP_49:af:30 (9c:8e:99:49:af:30), Dst: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e)
+Internet Protocol Version 6, Src: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc, Dst: 2800:3f0:4004:800::2002
+Transmission Control Protocol, Src Port: 50960, Dst Port: 80, Seq: 1, Ack: 1, Len: 1
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 5.796580       2804:7f3:8880:d51f:7583:5e92:7a66:a6dc 2800:3f0:4004:800::2002 TCP      75     50961 → 80 [ACK] Seq=1 Ack=1 Win=16660 Len=1
+
+Frame 11: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface 0
+Ethernet II, Src: HewlettP_49:af:30 (9c:8e:99:49:af:30), Dst: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e)
+Internet Protocol Version 6, Src: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc, Dst: 2800:3f0:4004:800::2002
+Transmission Control Protocol, Src Port: 50961, Dst Port: 80, Seq: 1, Ack: 1, Len: 1
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 5.805003       2800:3f0:4004:800::2002 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc TCP      74     80 → 50960 [RST] Seq=1 Win=0 Len=0
+
+Frame 12: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 6, Src: 2800:3f0:4004:800::2002, Dst: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc
+Transmission Control Protocol, Src Port: 80, Dst Port: 50960, Seq: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 5.826401       2800:3f0:4004:800::2002 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc TCP      74     80 → 50961 [RST] Seq=1 Win=0 Len=0
+
+Frame 13: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 6, Src: 2800:3f0:4004:800::2002, Dst: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc
+Transmission Control Protocol, Src Port: 80, Dst Port: 50961, Seq: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 5.895674       2804:7f3:8880:d51f:7583:5e92:7a66:a6dc 2800:3f0:4004:800::2002 TCP      75     50957 → 80 [ACK] Seq=1 Ack=1 Win=16537 Len=1
+
+Frame 14: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface 0
+Ethernet II, Src: HewlettP_49:af:30 (9c:8e:99:49:af:30), Dst: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e)
+Internet Protocol Version 6, Src: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc, Dst: 2800:3f0:4004:800::2002
+Transmission Control Protocol, Src Port: 50957, Dst Port: 80, Seq: 1, Ack: 1, Len: 1
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 5.895674       2804:7f3:8880:d51f:7583:5e92:7a66:a6dc 2800:3f0:4004:800::2002 TCP      75     50959 → 80 [ACK] Seq=1 Ack=1 Win=16537 Len=1
+
+Frame 15: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface 0
+Ethernet II, Src: HewlettP_49:af:30 (9c:8e:99:49:af:30), Dst: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e)
+Internet Protocol Version 6, Src: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc, Dst: 2800:3f0:4004:800::2002
+Transmission Control Protocol, Src Port: 50959, Dst Port: 80, Seq: 1, Ack: 1, Len: 1
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 5.915669       2804:7f3:8880:d51f:7583:5e92:7a66:a6dc 2800:3f0:4004:800::2002 TCP      75     50958 → 80 [ACK] Seq=1 Ack=1 Win=16537 Len=1
+
+Frame 16: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface 0
+Ethernet II, Src: HewlettP_49:af:30 (9c:8e:99:49:af:30), Dst: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e)
+Internet Protocol Version 6, Src: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc, Dst: 2800:3f0:4004:800::2002
+Transmission Control Protocol, Src Port: 50958, Dst Port: 80, Seq: 1, Ack: 1, Len: 1
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 5.915720       2804:7f3:8880:d51f:7583:5e92:7a66:a6dc 2800:3f0:4004:800::2002 TCP      75     50962 → 80 [ACK] Seq=1 Ack=1 Win=16537 Len=1
+
+Frame 17: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface 0
+Ethernet II, Src: HewlettP_49:af:30 (9c:8e:99:49:af:30), Dst: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e)
+Internet Protocol Version 6, Src: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc, Dst: 2800:3f0:4004:800::2002
+Transmission Control Protocol, Src Port: 50962, Dst Port: 80, Seq: 1, Ack: 1, Len: 1
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 5.922737       2800:3f0:4004:800::2002 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc TCP      74     80 → 50959 [RST] Seq=1 Win=0 Len=0
+
+Frame 18: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 6, Src: 2800:3f0:4004:800::2002, Dst: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc
+Transmission Control Protocol, Src Port: 80, Dst Port: 50959, Seq: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 5.923503       2800:3f0:4004:800::2002 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc TCP      74     80 → 50957 [RST] Seq=1 Win=0 Len=0
+
+Frame 19: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 6, Src: 2800:3f0:4004:800::2002, Dst: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc
+Transmission Control Protocol, Src Port: 80, Dst Port: 50957, Seq: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 5.943001       2800:3f0:4004:800::2002 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc TCP      74     80 → 50962 [RST] Seq=1 Win=0 Len=0
+
+Frame 20: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 6, Src: 2800:3f0:4004:800::2002, Dst: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc
+Transmission Control Protocol, Src Port: 80, Dst Port: 50962, Seq: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 5.943404       2800:3f0:4004:800::2002 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc TCP      74     80 → 50958 [RST] Seq=1 Win=0 Len=0
+
+Frame 21: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 6, Src: 2800:3f0:4004:800::2002, Dst: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc
+Transmission Control Protocol, Src Port: 80, Dst Port: 50958, Seq: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 6.716726       2804:7f3:8880:d51f:7583:5e92:7a66:a6dc 2400:cb00:2048:1::6819:db15 SSL      75     Continuation Data
+
+Frame 22: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface 0
+Ethernet II, Src: HewlettP_49:af:30 (9c:8e:99:49:af:30), Dst: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e)
+Internet Protocol Version 6, Src: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc, Dst: 2400:cb00:2048:1::6819:db15
+Transmission Control Protocol, Src Port: 50951, Dst Port: 443, Seq: 1, Ack: 1, Len: 1
+Secure Sockets Layer
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 6.739623       2400:cb00:2048:1::6819:db15 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc TCP      86     443 → 50951 [ACK] Seq=1 Ack=2 Win=31 Len=0 SLE=1 SRE=2
+
+Frame 23: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 6, Src: 2400:cb00:2048:1::6819:db15, Dst: 2804:7f3:8880:d51f:7583:5e92:7a66:a6dc
+Transmission Control Protocol, Src Port: 443, Dst Port: 50951, Seq: 1, Ack: 2, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 7.449676       192.168.25.233        104.244.42.67         SSL      55     Continuation Data
+
+Frame 24: 55 bytes on wire (440 bits), 55 bytes captured (440 bits) on interface 0
+Ethernet II, Src: HewlettP_49:af:30 (9c:8e:99:49:af:30), Dst: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e)
+Internet Protocol Version 4, Src: 192.168.25.233, Dst: 104.244.42.67
+Transmission Control Protocol, Src Port: 50879, Dst Port: 443, Seq: 1, Ack: 1, Len: 1
+Secure Sockets Layer
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 7.472293       104.244.42.67         192.168.25.233        TCP      66     443 → 50879 [ACK] Seq=1 Ack=2 Win=125 Len=0 SLE=1 SRE=2
+
+Frame 25: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: Sagemcom_fa:f1:1e (68:15:90:fa:f1:1e), Dst: HewlettP_49:af:30 (9c:8e:99:49:af:30)
+Internet Protocol Version 4, Src: 104.244.42.67, Dst: 192.168.25.233
+Transmission Control Protocol, Src Port: 443, Dst Port: 50879, Seq: 1, Ack: 2, Len: 0
